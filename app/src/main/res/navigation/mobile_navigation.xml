@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.gvalencia.giovanny_valencia_lab1_peliculas.InicioFragment"
+        android:label="inicio"
+        tools:layout="@layout/fragment_inicio"
+        >
+        <action
+            android:id="@+id/action_inicioFragment_to_registroFragment3"
+            app:destination="@id/registroFragment" />
+        <action
+            android:id="@+id/action_inicioFragment_to_trailersFragment"
+            app:destination="@id/trailersFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="com.gvalencia.giovanny_valencia_lab1_peliculas.RegistroFragment"
+        android:label="registro"
+        tools:layout="@layout/fragment_registro" />
+
+    <fragment
+        android:id="@+id/trailersFragment"
+        android:name="com.gvalencia.giovanny_valencia_lab1_peliculas.TrailersFragment"
+        android:label="trailers"
+        tools:layout="@layout/fragment_trailers" />
+    <fragment
+        android:id="@+id/batman"
+        android:name="com.gvalencia.giovanny_valencia_lab1_peliculas.Batman"
+        android:label="batman"
+        tools:layout="@layout/fragment_batman" />
+    <fragment
+        android:id="@+id/doctor"
+        android:name="com.gvalencia.giovanny_valencia_lab1_peliculas.doctor"
+        android:label="doctor"
+        tools:layout="@layout/fragment_doctor" />
+    <fragment
+        android:id="@+id/animales"
+        android:name="com.gvalencia.giovanny_valencia_lab1_peliculas.Animales"
+        android:label="animales"
+        tools:layout="@layout/fragment_animales" />
+    <fragment
+        android:id="@+id/spiderman"
+        android:name="com.gvalencia.giovanny_valencia_lab1_peliculas.Spiderman"
+        android:label="spiderman"
+        tools:layout="@layout/fragment_spiderman" />
+    <fragment
+        android:id="@+id/sing"
+        android:name="com.gvalencia.giovanny_valencia_lab1_peliculas.Sing"
+        android:label="sing"
+        tools:layout="@layout/fragment_sing" />
+
+</navigation>
